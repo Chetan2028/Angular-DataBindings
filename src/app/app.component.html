@@ -1,0 +1,35 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<!-- UC1 - to display HEllo From BridgeLabz using INterpolation Binding-->
+<!--
+<div>
+  <h1>{{this.title}}</h1>
+</div>
+-->
+
+<!-- UC 4 - To display username using two way binding-->
+<div>
+  <h1>Hello {{this.userName}} from Bridgelabz</h1>
+</div>
+
+<!-- UC2 - To display Bridgelabz logo using Property Binding-->
+<!-- UC3 - By Clicking on Bridelabz logo , launch bridgelabz website  using event binding--> 
+<img [src]="imgUrl" alt="Bridgelabz Logo" (click)=onClick($event)/>
+
+<!-- UC 4 - using input in two way binding method-->
+<div>
+  <input [(ngModel)] = "userName" (input) = onInput($event) />
+  <span class="error-output">{{this.nameError}}</span>
+</div>
+
+
+
+
+<router-outlet></router-outlet>
